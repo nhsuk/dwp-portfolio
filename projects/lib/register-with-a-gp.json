@@ -1,0 +1,27 @@
+{
+  "id":1,
+  "name":"Resigter with a GP",
+  "description": "Lets users register for a general practice/practioner.",
+  "theme": "NHS.UK",
+  "location": "Lodnon",
+  "phase":"alpha",
+  "phase_modifier":"",
+  "sro":"Juliet xxxx",
+  "service_man":"Matt Harrinton",
+  "phase-history":{
+    "discovery": [
+      {"label":"Completed", "date": "Month 201y"}
+    ],
+    "alpha": [
+      {"label":"Completed", "date": "Month 201y"}
+    ],
+    "beta": [
+      {"label":"Started", "date": "November 2015"}
+    ]
+  },
+  "priority":"Medium",
+  "prototype":"http://URL_HERE",
+  "showntells": [
+    "18 October 2016, 10.00am"
+  ]
+}

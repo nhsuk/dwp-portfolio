@@ -15,16 +15,7 @@ var path        = require('path'),
     password 	= process.env.PASSWORD,
     env         = process.env.NODE_ENV || 'development';
 
-/*
-  Password stuff
-*/
-if (env === 'production') {
-  if (!username || !password) {
-    console.log('Username or password is not set, exiting.');
-    process.exit(1);
-  }
-  app.use(express.basicAuth(username, password));
-}
+
 
 /*
   Load all the project data from the files.

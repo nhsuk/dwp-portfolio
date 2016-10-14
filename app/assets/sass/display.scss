@@ -13,7 +13,7 @@ html,body { height: 100%; margin: 0px; padding: 0px; overflow:hidden }
   margin-bottom:0;padding-bottom:0;
   max-width:none;
   overflow:hidden;
-  background-color:$nhs-blue;
+  background-color:#0072c6;
   &.phase-backlog { background-color:$backlog-colour;}
   &.phase-discovery { background-color:$discovery-colour;}
   &.phase-alpha { background-color:$alpha-colour;}

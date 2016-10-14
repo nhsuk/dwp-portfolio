@@ -11,7 +11,19 @@ var path        = require('path'),
     favicon     = require('serve-favicon'),
     app         = express(),
     port        = process.env.PORT || 3100,
+    password 	= process.env.PASSWORD,
     env         = process.env.NODE_ENV || 'development';
+
+/*
+  Password stuff
+*/
+if (env === 'production') {
+  if (!password) {
+    console.log('Password is not set, exiting.');
+    process.exit(1);
+  }
+  app.use(express.basicAuth(password));
+}
 
 /*
   Load all the project data from the files.

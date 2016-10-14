@@ -11,6 +11,7 @@ var path        = require('path'),
     favicon     = require('serve-favicon'),
     app         = express(),
     port        = process.env.PORT || 3100,
+    username 	= process.env.USERNAME,
     password 	= process.env.PASSWORD,
     env         = process.env.NODE_ENV || 'development';
 
@@ -18,11 +19,11 @@ var path        = require('path'),
   Password stuff
 */
 if (env === 'production') {
-  if (!password) {
-    console.log('Password is not set, exiting.');
+  if (!username || !password) {
+    console.log('Username or password is not set, exiting.');
     process.exit(1);
   }
-  app.use(express.basicAuth(password));
+  app.use(express.basicAuth(username, password));
 }
 
 /*

@@ -22,11 +22,13 @@
   padding:2px 8px 0;
   margin-left:0.25em;
 }
-#global-header-bar {background-color:$turquoise;}
+#global-header-bar {background-color:#0072c6;}
 @media (min-width: 769px) {
   #global-header .header-wrapper .header-global .header-logo {width:100%;}
 }
 #footer {display:none}
+
+.header-logo {display:none}
 
 $backlog-colour: $purple;
 
